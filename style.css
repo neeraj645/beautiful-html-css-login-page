@@ -1,0 +1,263 @@
+/* karle font */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+
+/* .inter-<uniquifier> {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     
+
+    /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 800 */
+
+    font-family: "Karla", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    padding: 0 25vh;
+    /* background-color: black; */
+}
+
+nav {
+    /* background-color: rgb(198, 152, 241); */
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 15px;
+    justify-content: space-between;
+
+}
+
+
+
+.nav-items {
+    color: black;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.377);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.login-button a {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-offset: 5px;
+    
+}
+
+.register-button a{ 
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: none;
+    /* color: white; */
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+
+
+.register-button{
+    background-color: #E32D2D;
+    padding: 7px 30px;
+    border-radius: 25px;
+    
+}
+
+/* hero */
+
+main{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+
+.hero-text{
+    margin-top: 20px;
+    width: 390px;
+    height: 340px;
+
+    /* background-color: rgb(152, 237, 221); */
+}
+
+.hero-heading{
+    
+    color: #e22d2d;
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero-content{
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 13px;
+}
+
+
+.hero-button{
+    margin-top: 110px;
+    font-size: 16px;
+    background-color: #E32D2D;
+    width: 205px;    
+    border-radius: 7px;    
+    padding: 10px 10px;
+
+
+}
+
+.hero-button a{
+    font-weight: 700;
+}
+
+.hero-form{
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    /* background-color: cadetblue; */
+}
+
+
+.input{
+    margin-bottom: 20px;
+}
+
+.input1{
+    margin-bottom: 30px;
+}
+
+input[type="text"], input[type="email"]{
+    width: 100%;
+    padding: 12px 5px;
+    /* font-size: 16px; */
+    color: #333;
+    background-color: #FDF5F5;
+   border: 1px solid rgb(232, 232, 232);
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 4px 4px 3px rgba(73, 73, 73, 0.258);
+  }
+
+  /* Change border color on hover */
+
+
+  /* Focus effect */
+  input[type="text"]:focus, input[type="email"]:focus {
+    border: 1px solid rgba(69, 68, 68, 0.342);
+    padding: 12px 15px;
+  }
+
+  /* Placeholder styling */
+  input[type="text"]::placeholder, input[type="email"]::placeholder {
+        font-weight: 300;
+        color: black;
+  }
+
+
+  .extra {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bolder;
+    
+  }
+
+.remember{
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.signin-btn a{
+ display: flex;
+ justify-content: center;
+ font-size: 25px;
+background-color: #E32D2D;
+width: 205px;  
+ border-radius: 7px;    
+padding: 10px 10px;
+}
+
+.signin-btn{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+
+
+.more p{
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.other-signin{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    margin-top: 30px;
+    width: 70px;
+    height: 50px;
+    background-color: #FDF5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.317);
+    
+}
+
+.main-img{
+    position: absolute;
+    display: flex;
+    
+}
+
+.main-img img{
+    position: absolute;
+    z-index: -2;
+    pointer-events: none;
+    height: 100vh;
+    width: 60rem; 
+      
+    /* background-color: red; */
+}
